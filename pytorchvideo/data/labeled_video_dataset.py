@@ -24,7 +24,7 @@ class LabeledVideoDataset(torch.utils.data.IterableDataset):
     (e.g. mp4, avi) or a frame video (e.g. a folder of jpg, or png)
     """
 
-    _MAX_CONSECUTIVE_FAILURES = 10
+    _MAX_CONSECUTIVE_FAILURES = 50
 
     def __init__(
         self,
